@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6.0)
-private import _SwiftSyntaxCShims
-#else
-@_implementationOnly import _SwiftSyntaxCShims
-#endif
-
 func decodeFromJSON<T: Decodable>(json: UnsafeBufferPointer<UInt8>) throws -> T {
   let map: JSONMap
   do {

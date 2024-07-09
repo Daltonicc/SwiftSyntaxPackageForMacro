@@ -10,14 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-private import _SwiftSyntaxCShims
-public import SwiftSyntaxMacros
-#else
-@_implementationOnly import _SwiftSyntaxCShims
-import SwiftSyntaxMacros
-#endif
-
 /// Optional features.
 @_spi(PluginMessage)
 public enum PluginFeature: String {

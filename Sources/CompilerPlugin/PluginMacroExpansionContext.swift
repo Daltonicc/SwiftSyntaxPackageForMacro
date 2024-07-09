@@ -10,20 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-internal import SwiftDiagnostics
-internal import SwiftOperators
-internal import SwiftParser
-internal import SwiftSyntax
-internal import SwiftSyntaxMacros
-#else
-import SwiftDiagnostics
-import SwiftOperators
-import SwiftParser
-import SwiftSyntax
-import SwiftSyntaxMacros
-#endif
-
 /// Caching parser for PluginMessage.Syntax
 class ParsedSyntaxRegistry {
   struct Key: Hashable {

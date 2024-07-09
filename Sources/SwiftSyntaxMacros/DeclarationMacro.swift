@@ -8,12 +8,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
-
 /// Describes a macro that forms declarations.
 public protocol DeclarationMacro: FreestandingMacro {
   /// Expand a macro described by the given freestanding macro expansion

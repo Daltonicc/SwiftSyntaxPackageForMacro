@@ -8,12 +8,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
-
 /// Describes a macro that adds accessors to a given declaration.
 public protocol AccessorMacro: AttachedMacro {
   /// Expand a macro that's expressed as a custom attribute attached to

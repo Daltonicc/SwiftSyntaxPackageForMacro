@@ -10,14 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-import SwiftSyntaxBuilder
-#else
-import SwiftSyntax
-import SwiftSyntaxBuilder
-#endif
-
 /// Abstractly represents a source location in the macro.
 public struct AbstractSourceLocation: Sendable {
   /// A primary expression that represents the file and is `ExpressibleByStringLiteral`.

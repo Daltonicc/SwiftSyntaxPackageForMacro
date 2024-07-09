@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6.0)
-private import _SwiftSyntaxCShims
-#else
-@_implementationOnly import _SwiftSyntaxCShims
-#endif
-
 #if canImport(ucrt)
 private let dup = _dup(_:)
 private let fileno = _fileno(_:)

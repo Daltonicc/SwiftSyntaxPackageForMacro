@@ -10,14 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6.0)
-public import SwiftSyntaxMacros
-@_spi(PluginMessage) private import SwiftCompilerPluginMessageHandling
-#else
-import SwiftSyntaxMacros
-@_spi(PluginMessage) import SwiftCompilerPluginMessageHandling
-#endif
-
 //
 // This source file contains the main entry point for compiler plugins.
 // A plugin receives messages from the "plugin host" (typically
